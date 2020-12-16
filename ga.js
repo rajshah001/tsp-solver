@@ -69,7 +69,7 @@ function nextGeneration() {
     const orderA = pickOne(population, fitness);
     const orderB = pickOne(population, fitness);
     const order = crossOver(orderA, orderB);
-    mutate(order, 0.05);
+    mutate(order, 0.01);
     newPopulation[i] = order;
   }
   population = newPopulation;
